@@ -1,0 +1,7 @@
+{
+    "name": "pleio/elggx_fivestar",
+    "type": "elgg-plugin",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
