@@ -35,7 +35,7 @@ $outerId = elgg_extract("outerId", $vars);
 $ratingText = elgg_extract("ratingTextClass", $vars);
 
 ?>
-<div id='<?php echo $outerId; ?>' class="fivestar-ratings-<?php echo $guid . $subclass; ?>">
+<div id='<?php echo $outerId; ?>' class="fivestar-ratings fivestar-ratings-<?php echo $guid . $subclass; ?>">
 	<form id="fivestar-form-<?php echo $guid; ?>" action="<?php echo elgg_get_site_url(); ?>action/elggx_fivestar/rate" method="post" class='fivestar-form'>
 		<?php for ($i = 1; $i <= $stars; $i++) { ?>
 			<?php if (round($rating['rating']) == $i) { $checked = 'checked="checked"'; } ?>
