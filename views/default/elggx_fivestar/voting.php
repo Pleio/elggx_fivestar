@@ -48,7 +48,7 @@ $ratingText = elgg_extract("ratingTextClass", $vars);
     <div class='clearfix'>
 	<?php if (!elgg_extract("min", $vars, false)) { ?>
 		<p <?php echo $ratingText; ?>>
-			<span id="fivestar-rating-<?php echo $guid; ?>"><?php echo $rating['rating']; ?></span>/<?php echo $stars . ' ' . elgg_echo('elggx_fivestar:lowerstars'); ?> (<span id="fivestar-votes-<?php echo $guid; ?>"><?php echo $rating['votes'] . ' ' . elgg_echo('elggx_fivestar:votes'); ?></span>)
+			&nbsp;<span id="fivestar-rating-<?php echo $guid; ?>"><?php echo $rating['rating']; ?></span>/<?php echo $stars . ' ' . elgg_echo('elggx_fivestar:lowerstars'); ?> (<span id="fivestar-votes-<?php echo $guid; ?>"><?php echo $rating['votes'] ?></span>)
 		</p>
 	<?php } ?>
 	</div>
